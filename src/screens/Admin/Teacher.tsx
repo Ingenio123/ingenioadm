@@ -40,7 +40,7 @@ function AddTeacher() {
               view more
             </Button>
           </FlexAtom>
-          <FlexAtom>
+          <FlexAtom mt="10px">
             <BoxAtom>
               <Avatar src="https://res.cloudinary.com/ingenio/image/upload/v1629822674/ixqjugfd5qdebupqxxln.png" />
               <div style={{ marginLeft: "10px" }}>
@@ -57,7 +57,7 @@ function AddTeacher() {
               view more
             </Button>
           </FlexAtom>
-          <FlexAtom>
+          <FlexAtom mt="10px">
             <BoxAtom>
               <Avatar src="https://res.cloudinary.com/ingenio/image/upload/v1629822674/ixqjugfd5qdebupqxxln.png" />
               <div style={{ marginLeft: "10px" }}>

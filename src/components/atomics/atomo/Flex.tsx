@@ -2,7 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import { FC } from "react";
 
 interface IProps {
-  mt?: string | 0;
+  mt?: string;
 }
 
 export const FlexAtom: FC<IProps> = ({ children, mt }) => (
