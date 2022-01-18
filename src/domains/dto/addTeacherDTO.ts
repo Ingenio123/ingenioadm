@@ -1,32 +1,36 @@
-export interface ICommentParams {
+export interface IAddParams {
   name: string;
-  boardId: string;
-  author: string;
-  content: string;
-  createAt: Date;
+  LastName: string;
+  eslogan: string;
+  description: string;
+  interests: string;
+  profBackground: string;
 }
 
-export interface ICommentDTO {
-  readonly id: number;
-  readonly boardId: number;
-  readonly author: string;
-  readonly content: string;
-  readonly createAt: Date;
+export interface IAddtDTO {
+  name: string;
+  LastName: string;
+  eslogan: string;
+  description: string;
+  interests: string;
+  profBackground: string;
 }
 
-class CommentDTO implements ICommentDTO {
-  readonly id: number;
-  readonly boardId: number;
-  readonly author: string;
-  readonly content: string;
-  readonly createAt: Date;
+class CommentDTO implements IAddtDTO {
+  readonly name: string;
+  readonly LastName: string;
+  readonly eslogan: string;
+  readonly description: string;
+  readonly interests: string;
+  readonly profBackground: string;
 
-  constructor(params: ICommentParams) {
-    this.id = params.id;
-    this.boardId = params.boardId;
-    this.author = params.author;
-    this.content = params.content;
-    this.createAt = params.createAt;
+  constructor(params: IAddParams) {
+    this.name = params.name;
+    this.LastName = params.LastName;
+    this.eslogan = params.eslogan;
+    this.description = params.description;
+    this.interests = params.interests;
+    this.profBackground = params.profBackground;
   }
 }
 

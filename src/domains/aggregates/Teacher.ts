@@ -1,16 +1,13 @@
 import { ITeacherEntity, ITeacherData } from "./interfaces/iTeacher";
 
 class Board implements ITeacherEntity {
-  private readonly _id: number;
-  private readonly _name: string;
-  private readonly _lastaName: string;
-  private readonly _eslogan: string;
-  private readonly _description: string;
-  private readonly _interests: string;
-  private readonly _profBackground: string;
+  readonly _name: string;
+  readonly _eslogan: string;
+  readonly _description: string;
+  readonly _interests: string;
+  readonly _profBackground: string;
 
   constructor(params: ITeacherData) {
-    this._id = params.id;
     this._name = params.name;
     this._eslogan = params.eslogan;
     this._description = params.description;
@@ -18,29 +15,24 @@ class Board implements ITeacherEntity {
     this._profBackground = params.profBackground;
   }
 
-  pushComment(commentList: Array<ICommentEntity>) {
-    this._comments = this._comments.concat(commentList);
-    return this;
+  get name() {
+    return this._name;
   }
 
-  get id() {
-    return this._id;
+  get eslogan() {
+    return this._eslogan;
   }
 
-  get comments() {
-    return this._comments;
+  get description() {
+    return this._description;
   }
 
-  get author() {
-    return this._author;
+  get interests() {
+    return this._interests;
   }
 
-  get content() {
-    return this._content;
-  }
-
-  get createAt() {
-    return this._createAt;
+  get profBackground() {
+    return this._profBackground;
   }
 }
 
